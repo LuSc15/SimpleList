@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SimpleList
+namespace SimpleListAufgabe
 {
     internal class Eintrag<T> where T: IComparable
     {
@@ -18,7 +18,9 @@ namespace SimpleList
 
         public void setNext(Eintrag<T> next)
         {
+            
             this._next = next;
+            Console.WriteLine($"Nachfolger von {this._data} ist {next._data}\n");
         }
         public Eintrag<T> getNext()
         {
